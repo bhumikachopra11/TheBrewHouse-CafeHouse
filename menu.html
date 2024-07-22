@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Brew House-Menu</title>
+    <link rel="icon" type="image" href="file:///C:/bootstrap/index.html/WhatsApp%20Image%202024-07-21%20at%2012.02.27%20AM.jpeg">
+    <link rel="icon" type="image" href="C:\bootstrap\index.html\WhatsApp Image 2024-07-21 at 12.02.27 AM (1).jpeg">
+
+
+    <style>
+        body {
+            background-color: beige;
+        }
+        .navbar-nav .nav-link {
+            color: brown !important; 
+            text-decoration: none !important;
+        }
+        .navbar-nav .nav-link:hover {
+            color: chocolate  !important;
+            text-decoration: underline !important;
+        }
+        .navbar-brand img {
+            border-radius: 50%;
+        }
+        .a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .b {
+            text-decoration: none;
+            color: black;
+            margin: 0 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s, text-decoration 0.3s;
+        }
+ 
+        .b:hover {
+            background-color: #e74c3c;
+            color: white;
+            text-decoration: none;
+        }
+       .card{
+        display: flex;
+       }
+       body {
+            background-color: beige;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            background-color: bisque;
+            border-color: bisque;
+            color: black;
+        }
+        .btn-primary:hover {
+            background-color: #e0c4a2;
+            border-color: #e0c4a2;
+        }
+        .row > .col-md-3 {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid" style="background-color: beige; color: rgb(219, 161, 90);">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://marketplace.canva.com/EAFLU7Mm3FI/1/0/1600w/canva-brown-and-beige-simple-minimalist-coffee-shop-circle-logo-ww1u6OsW_3o.jpg" alt="" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Cafe Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="orders page.html">Order Online</a>
+                    </li>
+                </ul>
+                <form class="d-flex ml-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/021/747/117/small_2x/horizontal-image-of-delicious-cappuccino-coffee-over-dark-background-with-copy-space-generative-ai-photo.jpg" width="100%" height="500px">
+    <div style="background-color: bisque;">
+    <nav class="a">
+        <a href="menu.html" class="b">HOT CLASSICS</a>
+        <a href="menu.html" class="b c">ALL-TIME CHILLERS</a>
+        <a href="menu.html" class="b">ALL-DAY DELIGHTS</a>
+        <a href="menu.html" class="b c">DAYLONG DELICACIES</a>
+        <a href="menu.html" class="b">SWEET TOOTH X 32</a>
+
+    </nav></div>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Cards</title>
+  <style>
+    
+    table {
+      width: 100%;
+      max-width: 1200px; 
+      table-layout: fixed;
+      border-collapse: collapse;
+      margin: auto; 
+    }
+    td {
+      padding: 10px;
+      text-align: center;
+      vertical-align: top; /* Aligns the content at the top of each cell */
+    }
+    .card {
+      width: 18rem;
+      background-color: beige;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #ddd;
+      height: 100%; /* Ensures the card takes up the full height of the cell */
+    }
+    .card-img-top {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 1rem;
+      text-align: center;
+      flex: 1; /* Allows the body to expand and fill the remaining space */
+    }
+    .btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Mocha_coffee.jpg" class="card-img-top" alt="Cafe Mocha">
+          <div class="card-body">
+            <h5 class="card-title"><b>Cafe Mocha</b></h5>
+            <p class="card-text">Warm your heart with an espresso layered with chocolate sauce.</p>
+            <p class="card-text">(210ml | 129.02kcal)</p>
+            <p class="card-text">₹259</p>
+            <div class="btn">Add to Cart</div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/18/c0/ab/c5/hot-caramel-macchiato.jpg" class="card-img-top" alt="Caramel Espresso Hot Cocoa">
+          <div class="card-body">
+            <h5 class="card-title"><b>Caramel Espresso Cocoa</b></h5>
+            <p class="card-text">Double your joy with rich and fruity Hot chocolate caramel espresso.</p>
+            <p class="card-text">(250ml | 255.27kcal)</p>
+            <p class="card-text">₹159</p>
+            <div class="btn">Add to Cart</div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card">
+          <img src="https://www.shutterstock.com/image-photo/tea-cup-600nw-719690932.jpg" class="card-img-top" alt="Darjeeling Tea">
+          <div class="card-body">
+            <h5 class="card-title"><b>Darjeeling Tea</b></h5>
+            <p class="card-text">Sip on love from the lush green tea estates of Darjeeling.</p>
+            <p class="card-text">(230ml | 3.31kcal)</p>
+            <p class="card-text">₹59</p>
+            <div class="btn">Add to Cart</div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card">
+          <img src="https://assets.telegraphindia.com/telegraph/e8353e64-2b2f-40c3-a61c-1a04fe077f09.jpg" class="card-img-top" alt="Espresso">
+          <div class="card-body">
+            <h5 class="card-title"><b>Espresso</b></h5>
+            <p class="card-text">Sing along Sabrina Carpenter with your all-time black coffee.</p>
+            <p class="card-text">(30ml | 5.80kcal)</p>
+            <p class="card-text">₹349</p>
+            <div class="btn">Add to Cart</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equal Sized Cards</title>
+  <style>
+    
+    table {
+      width: 100%;
+      table-layout: fixed;
+      border-collapse: collapse;
+      max-width: 1200px;
+      margin: auto;
+    }
+    td {
+      padding: 10px;
+      text-align: center;
+      vertical-align: top; /* Aligns the content at the top of each cell */
+    }
+    .card {
+      width: 18rem;
+      background-color: beige;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #ddd;
+      height: 100%; /* Ensures the card takes up the full height of the cell */
+    }
+    .card-img-top {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 1rem;
+      text-align: center;
+      flex: 1; /* Allows the body to expand and fill the remaining space */
+    }
+    .btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <table >
+    <tr>
+      <td>
+        <div class="card">
+          <img src="https://cdn.urbanpiper.com/media/bizmedia/2024/07/12/I9lTr-a21b7438-243c-492d-b6b0-9cac7ec9fa5a.jpg" class="card-img-top" alt="Signature Cold Coffee">
+          <div class="card-body">
+            <h5 class="card-title"><b>Signature Cold Coffee</b></h5>
+            <p class="card-text">Trendy and delicious dalgona coffee in a new avatar.</p>
+            <p class="card-text">(210ml | 246.77kcal)</p>
+            <p class="card-text">₹499</p>
+            <div class="btn">Add to Cart</div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card">
+          <img src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_744,ar_5:4/v1/img/recipes/23/29/18/x38TQCFcRRiV1FJYbTLP_coffeefrappe2.jpg" class="card-img-top" alt="Smoky Dark Chocolate Frappe">
+          <div class="card-body">
+            <h5 class="card-title"><b>Dark Chocolate Frappe</b></h5>
+            <p class="card-text">Smoky dark chocolate and coffee frappe.</p>
+            <p class="card-text">(350ml | 476.09kcal)</p>
+            <p class="card-text">₹459</p>
+            <div class="btn">Add to Cart</div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card">
+          <img src="https://mocktail.net/wp-content/uploads/2022/03/homemade-Iced-Americano-recipe_1ig-500x500.jpg" class="card-img-top" alt="Iced Americano">
+          <div class="card-body">
+            <h5 class="card-title"><b>Iced Americano</b></h5>
+            <p class="card-text">Shots of espresso drowning in ice that makes hearts melt.</p>
+            <p class="card-text">(350ml | 61.23kcal)</p>
+            <p class="card-text">₹199</p>
+            <div class="btn">Add to Cart</div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card">
+          <img src="https://www.acedarspoon.com/wp-content/uploads/2021/12/White-Chocolate-Frappuccino-Image-16.jpg" class="card-img-top" alt="Tangerine White Chocolate Frappe">
+          <div class="card-body">
+            <h5 class="card-title"><b>White Chocolate Frappe</b></h5>
+            <p class="card-text">Relish the zing in your creamy and chocolaty.</p>
+            <p class="card-text">(350ml | 391.89kcal)</p>
+            <p class="card-text">₹329</p>
+            <div class="btn">Add to Cart</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+      
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Cards</title>
+  <style>
+    table {
+      width: 100%;
+      max-width: 1200px; /* Optional: set a max-width for better control */
+      table-layout: fixed;
+      border-collapse: collapse;
+      margin: auto; /* Center the table horizontally */
+    }
+    td {
+      padding: 10px;
+      text-align: center;
+      vertical-align: top; /* Aligns the content at the top of each cell */
+    }
+    .card {
+      width: 18rem;
+      background-color: beige;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #ddd;
+      height: 100%; /* Ensures the card takes up the full height of the cell */
+    }
+    .card-img-top {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 1rem;
+      text-align: center;
+      flex: 1; /* Allows the body to expand and fill the remaining space */
+    }
+    .btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGytFGo9tUd3jAL_s96hKIRcvS2P04LavEgQ&s" class="card-img-top" alt="Cheese Tomato Croissant Sliders">
+          <div class="card-body">
+            <h5 class="card-title"><b>Cheese Tomato Croissant</b></h5>
+            <p class="card-text">Bright Mornings, tomato and cheese stuffed in a pair of warm croissants.</p>
+            <p class="card-text">(130g | 426.29kcal)</p>
+            <p class="card-text">₹479</p>
+            <a href="menu.html" class="btn">Add to Cart</a>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card">
+          <img src="https://yummybee.in/cdn/shop/products/RaspberryChocolateDelight_3_c0d694bc-47b2-45aa-8677-25a5840a161e.png?v=1677867245" class="card-img-top" alt="Paneer Tikka Sandwich">
+          <div class="card-body">
+            <h5 class="card-title"><b>Paneer Tikka Sandwich</b></h5>
+            <p class="card-text">Say 'Paneeerrrr!' with our juicy paneer tikka, sandwiched with juicy veggies.</p>
+            <p class="card-text">(165g | 376.20kcal)</p>
+            <p class="card-text">₹349</p>
+            <div class="btn">Add to Cart</div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHDSZj9a6z90T20ST4h8MeTttLk6UHAioCUQ&s" class="card-img-top" alt="Tandoori Paneer Burger">
+          <div class="card-body">
+            <h5 class="card-title"><b>Tandoori Paneer Burger</b></h5>
+            <p class="card-text">Spice it up with barbecued masala paneer in a soft, warm bun and feel like heaven.</p>
+            <p class="card-text">(160g | 446.45kcal)</p>
+            <p class="card-text">₹349</p>
+            <div class="btn">Add to Cart</div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card">
+          <img src="https://nugget-markets-01.s3.us-west-1.amazonaws.com/nugget/p/garlic-bread-recipe-7201-cggbf5u50v7ejhyf.jpg" class="card-img-top" alt="Classic Garlic Bread">
+          <div class="card-body">
+            <h5 class="card-title"><b>Classic Garlic Bread</b></h5>
+            <p class="card-text">A dish so classic and yummy, it's a perfect +1 for every drink in our menu.</p>
+            <p class="card-text">(80g | 298.32kcal)</p>
+            <p class="card-text">₹249</p>
+            <div class="btn">Add to Cart</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Cards</title>
+  <style>
+
+    table {
+      width: 100%;
+      max-width: 1200px; /* Optional: set a max-width for better control */
+      table-layout: fixed;
+      border-collapse: collapse;
+      margin: auto; /* Center the table horizontally */
+    }
+    td {
+      padding: 10px;
+      text-align: center;
+      vertical-align: top; /* Aligns the content at the top of each cell */
+    }
+    .card {
+      width: 18rem;
+      background-color: beige;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #ddd;
+      height: 100%; /* Ensures the card takes up the full height of the cell */
+    }
+    .card-img-top {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 1rem;
+      text-align: center;
+      flex: 1; /* Allows the body to expand and fill the remaining space */
+    }
+    .btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>
+        <div class="card">
+          <img src="https://sugarspunrun.com/wp-content/uploads/2023/06/Strawberry-cheesecake-recipe-6-of-8-500x500.jpg" class="card-img-top" alt="Strawberry Cheesecake">
+          <div class="card-body">
+            <h5 class="card-title"><b>Strawberry Cheesecake</b></h5>
+            <p class="card-text">An out-of-the-world cheesecake with strawberry compote.</p>
+            <p class="card-text">(200g | 571.32kcal)</p>
+            <p class="card-text">₹469</p>
+            <div class="btn">Add to Cart</div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card">
+          <img src="https://static.toiimg.com/photo/75758092.cms" class="card-img-top" alt="Dutch Truffle Cake">
+          <div class="card-body">
+            <h5 class="card-title"><b>Dutch Truffle Cake</b></h5>
+            <p class="card-text">Make your occasions unforgettable with the sinful chocolate cake.</p>
+            <p class="card-text">(100g | 366.83kcal)</p>
+            <p class="card-text">₹349</p>
+            <div class="btn">Add to Cart</div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card">
+          <img src="https://handletheheat.com/wp-content/uploads/2013/04/red-velvet-cake-recipe-SQUARE.jpg" class="card-img-top" alt="Red Velvet Cake">
+          <div class="card-body">
+            <h5 class="card-title"><b>Red Velvet Cake</b></h5>
+            <p class="card-text">Creamy rich and drool-worthy, this red paradise is all you need to go.</p>
+            <p class="card-text">(100g | 274.64kcal)</p>
+            <p class="card-text">₹449</p>
+            <div class="btn">Add to Cart</div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card">
+          <img src="https://www.keyingredient.com/media/56/ba/7cbda0d1de10fe62bd5a9c037d9d80c2670f.jpg/rh/nutella-caramel-hazelnut-brownies.jpg" class="card-img-top" alt="Hazelnut Brownie">
+          <div class="card-body">
+            <h5 class="card-title"><b>Hazelnut Brownie</b></h5>
+            <p class="card-text">The only time hazelnut wins against the chocolate brownie.</p>
+            <p class="card-text">(95g | 321.70kcal)</p>
+            <p class="card-text">₹349</p>
+            <div class="btn">Add to Cart</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+    
+    <div align="center" class="social-icons" ><a href="https://www.instagram.com/bhumiika_chopra/?igsh=MWN6aDkzczRrZHFwcg%3D%3D" class="social-icon" target="_blank">
+        <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNTMzLW5lb24tMDAzLnBuZw.png" height="35px" width="35px"></a>
+        <a href="https://www.instagram.com/bhumiika_chopra/?igsh=MWN6aDkzczRrZHFwcg%3D%3D" class="social-icon" target="_blank">
+        <img src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk4Mi1kMS0xMC5wbmc.png" height="35px" width="35px"></a>
+        <a href="https://www.instagram.com/bhumiika_chopra/?igsh=MWN6aDkzczRrZHFwcg%3D%3D" class="social-icon" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/768px-Logo_of_Twitter.svg.png?20220821125553" height="30px" width="35px"></a>
+        <a href="https://www.instagram.com/bhumiika_chopra/?igsh=MWN6aDkzczRrZHFwcg%3D%3D" class="social-icon" target="_blank">
+        <img src="https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_512px.png" height="30px" width="30px"></a>
+    </a></div>
+      
+</body>
+<footer align="center" style="background-color: beige;"><HR>
+    <h5 > © Bhumika Chopra, All Rights Reserved.</h5>
+    <hr>
+</footer>
+</html>
